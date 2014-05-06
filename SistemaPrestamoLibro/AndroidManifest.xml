@@ -106,6 +106,46 @@
             android:name="sv.ues.fia.sistemaprestamolibro.UsuarioMenuActivity"
             android:label="@string/title_activity_usuario_menu" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.AutorActualizarActivity"
+            android:label="@string/title_activity_autor_actualizar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.AutorConsultarActivity"
+            android:label="@string/title_activity_autor_consultar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.AutorEliminarActivity"
+            android:label="@string/title_activity_autor_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.AutorInsertarActivity"
+            android:label="@string/title_activity_autor_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.AutorMenuActivity"
+            android:label="@string/title_activity_autor_menu" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DetalleAutorActualizarActivity"
+            android:label="@string/title_activity_detalle_autor_actualizar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DetalleAutorConsultarActivity"
+            android:label="@string/title_activity_detalle_autor_consultar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DetalleAutorEliminarActivity"
+            android:label="@string/title_activity_detalle_autor_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DetalleAutorInsertarActivity"
+            android:label="@string/title_activity_detalle_autor_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DetalleAutorMenuActivity"
+            android:label="@string/title_activity_detalle_autor_menu" >
+        </activity>
     </application>
 
 </manifest>

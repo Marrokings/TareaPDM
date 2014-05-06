@@ -43,5 +43,15 @@
     <string name="title_activity_usuario_eliminar">UsuarioEliminarActivity</string>
     <string name="title_activity_usuario_insertar">UsuarioInsertarActivity</string>
     <string name="title_activity_usuario_menu">UsuarioMenuActivity</string>
+    <string name="title_activity_autor_actualizar">AutorActualizarActivity</string>
+    <string name="title_activity_autor_consultar">AutorConsultarActivity</string>
+    <string name="title_activity_autor_eliminar">AutorEliminarActivity</string>
+    <string name="title_activity_autor_insertar">AutorInsertarActivity</string>
+    <string name="title_activity_autor_menu">AutorMenuActivity</string>
+    <string name="title_activity_detalle_autor_actualizar">DetalleAutorActualizarActivity</string>
+    <string name="title_activity_detalle_autor_consultar">DetalleAutorConsultarActivity</string>
+    <string name="title_activity_detalle_autor_eliminar">DetalleAutorEliminarActivity</string>
+    <string name="title_activity_detalle_autor_insertar">DetalleAutorInsertarActivity</string>
+    <string name="title_activity_detalle_autor_menu">DetalleAutorMenuActivity</string>
 
 </resources>
