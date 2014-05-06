@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sv.ues.fia.sistemaprestamolibro"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.PrestamoLibroActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.AreaInsertarActivity"
+            android:label="@string/title_activity_area_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.AreaConsultarActivity"
+            android:label="@string/title_activity_area_consultar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.AreaActualizarActivity"
+            android:label="@string/title_activity_area_actualizar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.AreaEliminarActivity"
+            android:label="@string/title_activity_area_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DocumentoInsertarActivity"
+            android:label="@string/title_activity_documento_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DocumentoActualizarActivity"
+            android:label="@string/title_activity_documento_actualizar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DocumentoEliminarActivity"
+            android:label="@string/title_activity_documento_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DocumentoConsultarActivity"
+            android:label="@string/title_activity_documento_consultar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.AreaMenuActivity"
+            android:label="@string/title_activity_area_menu" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DocumentoMenuActivity"
+            android:label="@string/title_activity_documento_menu" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.MenuIconosActivity"
+            android:label="@string/title_activity_menu_iconos" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.LoginActivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.PrestamoActualizarActivity"
+            android:label="@string/title_activity_prestamo_actualizar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.PrestamoConsutarActivity"
+            android:label="@string/title_activity_prestamo_consutar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.PrestamoEliminarActivity"
+            android:label="@string/title_activity_prestamo_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.PrestamoInsertarActivity"
+            android:label="@string/title_activity_prestamo_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.UsuarioActualizarActivity"
+            android:label="@string/title_activity_usuario_actualizar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.UsuarioConsultarActivity"
+            android:label="@string/title_activity_usuario_consultar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.UsuarioEliminarActivity"
+            android:label="@string/title_activity_usuario_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.UsuarioInsertarActivity"
+            android:label="@string/title_activity_usuario_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.UsuarioMenuActivity"
+            android:label="@string/title_activity_usuario_menu" >
+        </activity>
+    </application>
+
+</manifest>

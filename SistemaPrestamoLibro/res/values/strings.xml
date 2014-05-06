@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SistemaPrestamoLibro</string>
+    <string name="action_settings">Settings</string>
+    <string name="TODO"></string>
+    <string name="title_activity_area_insertar">AreaInsertarActivity</string>
+    <string name="title_activity_area_consultar">AreaConsultarActivity</string>
+    <string name="title_activity_area_actualizar">AreaActualizarActivity</string>
+    <string name="title_activity_area_eliminar">AreaEliminarActivity</string>
+    <string name="title_activity_documento_insertar">DocumentoInsertarActivity</string>
+    <string name="title_activity_documento_actualizar">DocumentoActualizarActivity</string>
+    <string name="title_activity_documento_eliminar">DocumentoEliminarActivity</string>
+    <string name="title_activity_documento_consultar">DocumentoConsultarActivity</string>
+    <string name="title_activity_area_menu">AreaMenuActivity</string>
+    <string name="title_activity_documento_menu">DocumentoMenuActivity</string>
+    <string name="ingrese_la_categoria">Ingrese la Categoria</string>
+    <string name="nombrearea">Nombre del Area</string>
+    <string name="ingrese_el_id_">ingrese el id:</string>
+    <string name="limpiar">Limpiar Texto</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="consultar">Consultar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="insertar">Insertar</string>
+    <string name="titulo">Titulo:</string>
+    <string name="editorial">Editorial:</string>
+    <string name="categoria_">Id Categoria:</string>
+    <string name="autor">Autor:</string>
+    <string name="title_activity_menu_iconos">MenuIconosActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="autorbtn">TODO</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="sistema">SISTEMA DE PRESTAMOS DE LIBROS Y TESIS</string>
+    <string name="usuario">Nombre de Usuario:</string>
+    <string name="contrasena">Contraseña:</string>
+    <string name="loguea">Ingresar</string>
+    <string name="title_activity_prestamo_actualizar">PrestamoActualizarActivity</string>
+    <string name="title_activity_prestamo_consutar">PrestamoConsutarActivity</string>
+    <string name="title_activity_prestamo_eliminar">PrestamoEliminarActivity</string>
+    <string name="title_activity_prestamo_insertar">PrestamoInsertarActivity</string>
+    <string name="title_activity_usuario_actualizar">UsuarioActualizarActivity</string>
+    <string name="title_activity_usuario_consultar">UsuarioConsultarActivity</string>
+    <string name="title_activity_usuario_eliminar">UsuarioEliminarActivity</string>
+    <string name="title_activity_usuario_insertar">UsuarioInsertarActivity</string>
+    <string name="title_activity_usuario_menu">UsuarioMenuActivity</string>
+
+</resources>
