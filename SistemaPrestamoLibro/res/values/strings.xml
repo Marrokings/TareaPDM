@@ -34,10 +34,16 @@
     <string name="usuario">Nombre de Usuario:</string>
     <string name="contrasena">Contraseña:</string>
     <string name="loguea">Ingresar</string>
+     <string name="carnet">Carnet:</string>
+    <string name="nombAlum">Nombre Alumno:</string>
+    <string name="apelAlum">Apellido Alumno:</string>
+    <string name="direccion">Direccion:</string>
+    <string name="telefono">Telefono:</string>
     <string name="title_activity_prestamo_actualizar">PrestamoActualizarActivity</string>
     <string name="title_activity_prestamo_consutar">PrestamoConsutarActivity</string>
     <string name="title_activity_prestamo_eliminar">PrestamoEliminarActivity</string>
     <string name="title_activity_prestamo_insertar">PrestamoInsertarActivity</string>
+    <string name="title_activity_prestamo_menu">PrestamoMenuActivity</string>
     <string name="title_activity_usuario_actualizar">UsuarioActualizarActivity</string>
     <string name="title_activity_usuario_consultar">UsuarioConsultarActivity</string>
     <string name="title_activity_usuario_eliminar">UsuarioEliminarActivity</string>

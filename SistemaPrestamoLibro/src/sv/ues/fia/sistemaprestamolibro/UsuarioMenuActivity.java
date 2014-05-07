@@ -17,8 +17,8 @@ public class UsuarioMenuActivity extends ListActivity {
 	String[] menu={"Insertar Registro","Eliminar Registro","Consultar Registro", 
 	"Actualizar Registro"}; 
 	 String[] 
-	activities={"MenuIconosActivity","AreaEliminarActivity","AreaConsultarActivity", 
-	"AreaActualizarActivity"}; 
+	activities={"UsuarioInsertarActivity","UsuarioEliminarActivity","UsuarioConsultarActivity", 
+	"UsuarioActualizarActivity"}; 
    
 	 protected void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);

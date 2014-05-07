@@ -48,7 +48,7 @@ public class PrestamoLibroActivity extends Activity {
 	        ""
 	    };
  String[]activities={"AreaMenuActivity","DocumentoMenuActivity","LoginActivity","DocumentoActivity",
-		 "DocumentoActivity","DocumentoActivity","DocumentoActivity","DocumentoActivity","DocumentoActivity",
+		 "DocumentoActivity","PrestamoMenuActivity","DocumentoActivity","UsuarioMenuActivity","DocumentoActivity",
 		 "DocumentoActivity"};
  
     public class MyAdapter extends BaseAdapter {

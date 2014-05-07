@@ -146,6 +146,10 @@
             android:name="sv.ues.fia.sistemaprestamolibro.DetalleAutorMenuActivity"
             android:label="@string/title_activity_detalle_autor_menu" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.PrestamoMenuActivity"
+            android:label="@string/title_activity_prestamo_menu" >
+        </activity>
     </application>
 
 </manifest>
