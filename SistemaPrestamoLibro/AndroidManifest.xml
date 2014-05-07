@@ -75,7 +75,7 @@
             android:label="@string/title_activity_prestamo_actualizar" >
         </activity>
         <activity
-            android:name="sv.ues.fia.sistemaprestamolibro.PrestamoConsutarActivity"
+            android:name="sv.ues.fia.sistemaprestamolibro.PrestamoConsultarActivity"
             android:label="@string/title_activity_prestamo_consutar" >
         </activity>
         <activity
@@ -153,3 +153,4 @@
     </application>
 
 </manifest>
+

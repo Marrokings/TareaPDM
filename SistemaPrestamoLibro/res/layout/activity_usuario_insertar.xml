@@ -31,13 +31,17 @@ android:maxLength="30" />
 <TableRow>
 <TextView android:text="@string/direccion" />
 <EditText
-android:id="@+id/editSexo"
+android:id="@+id/editDireccion"
 android:inputType="text"
-android:maxLength="1" />
+android:maxLength="100" />
 </TableRow>
 
 <TableRow>
 <TextView android:text="@string/telefono" />
+<EditText
+android:id="@+id/editTelefono"
+android:inputType="text"
+android:maxLength="8" />
 </TableRow>
 
 <TableRow>
