@@ -2,16 +2,17 @@ package sv.ues.fia.sistemaprestamolibro;
 
 public class Area {
 
+	private String idarea;
 	private String nombrearea;
-	private char idarea;
+	
 	
 	public Area(){
 		
 	}
 	
-	public Area(String nombrearea,char idarea ){
-    	this.nombrearea=nombrearea;
+	public Area(String idarea,String nombrearea ){
     	this.idarea=idarea;
+    	this.nombrearea=nombrearea;
     }
 
     public String getNombrearea() {
@@ -22,11 +23,11 @@ public class Area {
 		this.nombrearea = nombrearea;
 	}
 
-	public int getIdarea() {
+	public String getIdarea() {
 		return idarea;
 	}
 
-	public void setIdarea(char idarea) {
+	public void setIdarea(String idarea) {
 		this.idarea = idarea;
 	}
 

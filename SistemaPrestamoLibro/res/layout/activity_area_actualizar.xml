@@ -7,18 +7,18 @@
  <TableRow>
    <TextView android:text="@string/categoria_" />
     <EditText
-      android:id="@+id/editidcatg"
+      android:id="@+id/editIdarea"
       android:inputType="text"
       android:maxLength="3" />
  </TableRow>
  <TableRow>
    <TextView android:text="@string/nombrearea" />
    <EditText
-    android:id="@+id/editNombreAr"
+    android:id="@+id/editNomarea"
     android:inputType="text"
     android:maxLength="20" />
 </TableRow>
-<TableRow>
+<TableRow >
 <Button
 android:onClick="actualizarArea"
 android:text="@string/actualizar" />

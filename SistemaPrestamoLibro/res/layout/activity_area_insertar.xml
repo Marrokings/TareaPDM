@@ -7,20 +7,20 @@ android:stretchColumns="1" >
 <TableRow>
 <TextView android:text="@string/ingrese_el_id_"/>
 <EditText
-android:id="@+id/editidcat"
+android:id="@+id/editIdarea"
 android:inputType="text"
 android:maxLength="3" />
 </TableRow>
 <TableRow>
 <TextView android:text="@string/ingrese_la_categoria" />
 <EditText
-android:id="@+id/editarea"
+android:id="@+id/editNomarea"
 android:inputType="text"
 android:maxLength="20" />
 </TableRow>
 <TableRow>
 <Button
-android:onClick="insertarAlumno"
+android:onClick="insertarArea"
 android:text="@string/insertar" />
 <Button
 android:onClick="limpiarTexto"

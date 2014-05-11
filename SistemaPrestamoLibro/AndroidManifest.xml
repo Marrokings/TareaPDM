@@ -150,6 +150,10 @@
             android:name="sv.ues.fia.sistemaprestamolibro.PrestamoMenuActivity"
             android:label="@string/title_activity_prestamo_menu" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.MenuCRUDActivity"
+            android:label="@string/title_activity_menu_crud" >
+        </activity>
     </application>
 
 </manifest>

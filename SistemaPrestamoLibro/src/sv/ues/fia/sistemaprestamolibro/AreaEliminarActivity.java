@@ -2,21 +2,31 @@ package sv.ues.fia.sistemaprestamolibro;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class AreaEliminarActivity extends Activity {
 
+	ControlBDPrestamoLib controlhelper; 
+	EditText editIdcategoria;	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_area_eliminar);
+		controlhelper = new ControlBDPrestamoLib(this);
+		editIdcategoria= (EditText) findViewById(R.id.editIdarea); 
+		 
 	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.area_eliminar, menu);
-		return true;
-	}
+	public void eliminarArea(View v) { 
+		 String idarea=editIdcategoria.getText().toString(); 
+		 String regEliminados; 
+		 Area area=new Area(); 
+		 area.setIdarea(idarea); 
+		 controlhelper.abrir(); 
+		 regEliminados=controlhelper.eliminar(area); 
+		 controlhelper.cerrar(); 
+		 Toast.makeText(this, regEliminados, Toast.LENGTH_SHORT).show(); 
+		} 
 
 }

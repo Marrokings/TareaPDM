@@ -2,22 +2,29 @@
   <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
    android:layout_width="fill_parent"
    android:layout_height="wrap_content"
-   android:paddingTop="10dip"
+   android:paddingTop="10dp"
    android:stretchColumns="1" >
  <TableRow>
    <TextView android:text="@string/ingrese_el_id_" />
     <EditText
-      android:id="@+id/editidlibro"
+      android:id="@+id/editIdlibro"
       android:inputType="text"
       android:maxLength="4" />
  </TableRow>
  <TableRow>
    <TextView android:text="@string/categoria_" />
     <EditText
-      android:id="@+id/editidcatg"
+      android:id="@+id/editIdarea"
       android:inputType="text"
       android:maxLength="3" />
  </TableRow>
+  <TableRow>
+   <TextView android:text="@string/tipodoc" />
+   <EditText
+    android:id="@+id/editTipod"
+    android:inputType="text"
+    android:maxLength="2" />
+</TableRow>
  <TableRow>
    <TextView android:text="@string/titulo" />
    <EditText
@@ -28,17 +35,11 @@
  <TableRow>
    <TextView android:text="@string/editorial" />
     <EditText
-      android:id="@+id/edit_orial"
+      android:id="@+id/editEditorial"
       android:inputType="text"
       android:maxLength="10" />
  </TableRow>
- <TableRow>
-   <TextView android:text="@string/autor" />
-   <EditText
-    android:id="@+id/editAutor"
-    android:inputType="text"
-    android:maxLength="20" />
-</TableRow>
+
 <TableRow android:gravity="center">
 <Button
 android:onClick="insertarDoc"

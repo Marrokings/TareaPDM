@@ -2,74 +2,67 @@ package sv.ues.fia.sistemaprestamolibro;
 
 public class Documento {
 	
-	private char coddocument;
-	private char idarea;
-	private String nomdocument;
+	private String coddocument;
+	private String idarea;
+	private String idtipo;
 	private String editorial;
+	private String nomdocument;
 	
-	 public Documento(){
+	public Documento(){
 		  
 	  }
-	
-	public Documento(char coddocument, char idarea, String nomdocument,
-			String editorial) {
+		
+	public Documento(String coddocument, String idarea, String idtipo,
+			String editorial, String nomdocument) {
 		super();
 		this.coddocument = coddocument;
 		this.idarea = idarea;
-		this.nomdocument = nomdocument;
+		this.idtipo = idtipo;
 		this.editorial = editorial;
+		this.nomdocument = nomdocument;
 	}
 
 
-	public char getCoddocument() {
+	public String getCoddocument() {
 		return coddocument;
 	}
 
-
-
-	public void setCoddocument(char coddocument) {
+	public void setCoddocument(String coddocument) {
 		this.coddocument = coddocument;
 	}
 
-
-
-	public char getIdarea() {
+	public String getIdarea() {
 		return idarea;
 	}
 
-
-
-	public void setIdarea(char idarea) {
+	public void setIdarea(String idarea) {
 		this.idarea = idarea;
 	}
 
-
-
-	public String getNomdocument() {
-		return nomdocument;
+	public String getIdtipo() {
+		return idtipo;
 	}
 
-
-
-	public void setNomdocument(String nomdocument) {
-		this.nomdocument = nomdocument;
+	public void setIdtipo(String idtipo) {
+		this.idtipo = idtipo;
 	}
-
-
 
 	public String getEditorial() {
 		return editorial;
 	}
 
-
-
 	public void setEditorial(String editorial) {
 		this.editorial = editorial;
 	}
 
+	public String getNomdocument() {
+		return nomdocument;
+	}
 
+	public void setNomdocument(String nomdocument) {
+		this.nomdocument = nomdocument;
+	}
 
 	
-
-  
+	
 }

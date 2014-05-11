@@ -25,7 +25,8 @@
     <string name="titulo">Titulo:</string>
     <string name="editorial">Editorial:</string>
     <string name="categoria_">Id Categoria:</string>
-    <string name="autor">Autor:</string>
+    <string name="tipodoc">Id Tipo doc</string>
+    <string name="autor">Escritor:</string>
     <string name="title_activity_menu_iconos">MenuIconosActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="autorbtn">TODO</string>
@@ -34,6 +35,9 @@
     <string name="usuario">Nombre de Usuario:</string>
     <string name="contrasena">Contraseña:</string>
     <string name="loguea">Ingresar</string>
+    <string name="salir">Salir</string>
+    <string name="InsBD">Llenar Base</string>
+    <string name="title_activity_menu_crud">MenuCRUDActivity</string>
     <string name="title_activity_prestamo_actualizar">PrestamoActualizarActivity</string>
     <string name="title_activity_prestamo_consutar">PrestamoConsutarActivity</string>
     <string name="title_activity_prestamo_eliminar">PrestamoEliminarActivity</string>
