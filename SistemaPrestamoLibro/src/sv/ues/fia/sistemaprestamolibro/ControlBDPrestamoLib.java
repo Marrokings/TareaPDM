@@ -274,7 +274,7 @@ public class ControlBDPrestamoLib {
 				  }
 				  
 				  DetalleAutor DetalleAutor = new DetalleAutor();
-					for(int i=0;i<4;i++){
+					for(int i=0;i<3;i++){
 					DetalleAutor.setCodautor(VDAcodautor[i]);
 					DetalleAutor.setCoddocument(VDAcoddocument[i]);
 					DetalleAutor.setEspecializacion(VDAespecializacion[i]);				

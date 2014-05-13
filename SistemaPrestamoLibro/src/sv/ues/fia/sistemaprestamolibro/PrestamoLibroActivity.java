@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -115,6 +116,16 @@ public class PrestamoLibroActivity extends Activity {
 	        
 	        GridView gw = (GridView) findViewById(R.id.gridview);
 	        gw.setAdapter(new MyAdapter(this));
+	        
+	        //mensaje de bienvenida
+	        Intent msj = getIntent();
+   	        String nomb = msj.getStringExtra(LoginActivity.ACT_INFO);
+   	        String welcome="Bienvenid@ a la App "+nomb;
+   	        Toast tostbd=Toast.makeText(this, welcome,5000000); 
+       	    tostbd.setGravity(Gravity.CENTER|Gravity.TOP,0,10);
+       	    tostbd.show();
+   	        
+   	        
 
 	   gw.setOnItemClickListener(new OnItemClickListener(){
 	    public void onItemClick(AdapterView<?> parent,View v,int position,long id){
@@ -173,7 +184,7 @@ public class PrestamoLibroActivity extends Activity {
 	        	BDhelper.abrir(); 
 	       	 String tost=BDhelper.llenarBDPrestamoLib(); 
 	       	 BDhelper.cerrar(); 
-	       	 Toast.makeText(this, tost, Toast.LENGTH_SHORT).show(); 
+	       	 Toast.makeText(this, tost, Toast.LENGTH_SHORT).show();
 	            return true;
 	 
 	         
