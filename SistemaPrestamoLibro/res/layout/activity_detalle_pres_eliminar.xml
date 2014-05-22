@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="4dip"
+    android:stretchColumns="1">
+    
+    <TableRow >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cod_doc"/>
+        <EditText 
+            android:id="@+id/editCodDocDetalle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="4"/>
+    </TableRow>
+    
+    <TableRow >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cod_pres"/>
+        <EditText 
+            android:id="@+id/editCodPresDetalle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="6"/>
+    </TableRow>
+    
+    <TableRow >
+        <Button 
+            android:layout_width="wrap_content"
+            android:text="@string/eliminar"
+            android:onClick="eliminarDetalle"/>
+        <Button 
+            android:layout_width="wrap_content"
+            android:text="@string/limpiar"
+            android:onClick="limpiarTexto"/>
+    </TableRow>
+</TableLayout>

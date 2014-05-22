@@ -154,7 +154,46 @@
             android:name="sv.ues.fia.sistemaprestamolibro.MenuCRUDActivity"
             android:label="@string/title_activity_menu_crud" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.TipoMenuActivity"
+            android:label="@string/title_activity_tipo_menu" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.TipoInsertarActivity"
+            android:label="@string/title_activity_tipo_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.TipoEliminarActivity"
+            android:label="@string/title_activity_tipo_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.TipoActualizarActivity"
+            android:label="@string/title_activity_tipo_actualizar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.TipoConsultarActivity"
+            android:label="@string/title_activity_tipo_consultar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DetallePresMenuActivity"
+            android:label="@string/title_activity_detalle_pres_menu" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DetallePresInsertarActivity"
+            android:label="@string/title_activity_detalle_pres_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DetallePresEliminarActivity"
+            android:label="@string/title_activity_detalle_pres_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DetallePresActualizarActivity"
+            android:label="@string/title_activity_detalle_pres_actualizar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.sistemaprestamolibro.DetallePresConsultarActivity"
+            android:label="@string/title_activity_detalle_pres_consultar" >
+        </activity>
     </application>
 
 </manifest>
-

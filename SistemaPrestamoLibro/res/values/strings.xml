@@ -70,5 +70,20 @@
     <string name="title_activity_detalle_autor_insertar">DetalleAutorInsertarActivity</string>
     <string name="title_activity_detalle_autor_menu">DetalleAutorMenuActivity</string>
     <string name="title_activity_prestamo_consultar">PrestamoConsultarActivity</string>
+    <string name="nomtipo">Tipo de Documento</string>
+    <string name="title_activity_tipo_menu">TipoMenuActivity</string>
+    <string name="title_activity_tipo_insertar">TipoInsertarActivity</string>
+    <string name="title_activity_tipo_eliminar">TipoEliminarActivity</string>
+    <string name="title_activity_tipo_actualizar">TipoActualizarActivity</string>
+    <string name="title_activity_tipo_consultar">TipoConsultarActivity</string>
+    <string name="cod_doc">Codigo Documento</string>
+    <string name="cod_pres">Codigo Prestamo</string>
+    <string name="prestamo">Numero de Prestamo</string>
+    <string name="maximo">Maximo de Prestamo</string>
+    <string name="title_activity_detalle_pres_menu">DetallePresMenuActivity</string>
+    <string name="title_activity_detalle_pres_insertar">DetallePresInsertarActivity</string>
+    <string name="title_activity_detalle_pres_eliminar">DetallePresEliminarActivity</string>
+    <string name="title_activity_detalle_pres_actualizar">DetallePresActualizarActivity</string>
+    <string name="title_activity_detalle_pres_consultar">DetallePresConsultarActivity</string>
 
 </resources>

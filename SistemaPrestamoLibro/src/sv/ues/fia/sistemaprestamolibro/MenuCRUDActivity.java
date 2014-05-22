@@ -32,11 +32,11 @@ public class MenuCRUDActivity extends Activity {
 				        };
 			 String[]activities={"AreaInsertarActivity","AreaEliminarActivity","AreaConsultarActivity","AreaActualizarActivity",
 					             "DocumentoInsertarActivity","DocumentoEliminarActivity","DocumentoConsultarActivity","DocumentoActualizarActivity",
-					             "","","","",//activitys tipodoc
+					             "TipoInsertarActivity","TipoEliminarActivity","TipoConsultarActivity","TipoActualizarActivity",//activitys tipodoc
 			                     "AutorInsertarActivity","AutorEliminarActivity","AutorConsultarActivity","AutorActualizarActivity",
 			                     "DetalleAutorInsertarActivity","DetalleAutorEliminarActivity","DetalleAutorConsultarActivity","DetalleAutorActualizarActivity",
 			                     "PrestamoInsertarActivity","PrestamoEliminarActivity","PrestamoConsultarActivity","PrestamoActualizarActivity",
-			                     "DetallePrestamoInsertarActivity","DetallePrestamoEliminarActivity","DetallePrestamoConsultarActivity","DetallePrestamoActualizarActivity",
+			                     "DetallePresInsertarActivity","DetallePresEliminarActivity","DetallePresConsultarActivity","DetallePresActualizarActivity",
 			                     "UsuarioInsertarActivity","UsuarioEliminarActivity","UsuarioConsultarActivity","UsuarioActualizarActivity",
 			                     "","","","",//activitys sancion o penalizacion
 			                     "","","","",//activitys secretaria

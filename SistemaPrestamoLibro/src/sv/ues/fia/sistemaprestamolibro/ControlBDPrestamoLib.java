@@ -17,6 +17,10 @@ public class ControlBDPrestamoLib {
 			{"coddoc","idtipo","idarea","nombredoc","editorial"};
 	private static final String[]camposDetalleAutor = new String []
 			{"coddoc","codautor","especializacion"};
+	private static final String[]camposTipoDoc=new String[]
+			{"idtipo","nombretipo"};
+	private static final String[]camposDetalle = new String[]
+			{"coddoc","codprestamo","numprestamo","maxprest"};
 	
 	 private final Context context; 
 	 private DatabaseHelper DBHelper; 
@@ -232,6 +236,139 @@ public class ControlBDPrestamoLib {
 				return null;
 				}
 				}
+		 
+		 /****************** parte de TipoDoc *****************/
+		 public String insertar(TipoDoc tipodoc){
+			 
+			 String regInsertados = "Registro N°= ";
+			 long contador=0;
+			 
+			 ContentValues tipo = new ContentValues();
+			 tipo.put("idtipo", tipodoc.getIdtipo());
+			 tipo.put("nombretipo", tipodoc.getNombretipo());
+			 
+			 contador=db.insert("Tipodoc", null, tipo);
+			 
+			 if(contador==-1 || contador==0)
+			 {
+				 regInsertados="Error al Insertar el Registro, Registro Duplicado. Verificar Inserción";
+			 }else{
+				 regInsertados=regInsertados+contador;
+			 }
+			 return regInsertados;
+		 }//fin insertar(TipoDoc)
+		 
+		 public TipoDoc consultarTipo(String idTipo){
+			 
+			 String[] id={idTipo};
+			 Cursor cursor = db.query("Tipodoc",camposTipoDoc,"idtipo=?",id,null,null,null);
+			 
+			 if(cursor.moveToFirst()){
+				 TipoDoc tipo = new TipoDoc();
+				 tipo.setIdtipo(cursor.getString(0));
+				 tipo.setNombretipo(cursor.getString(1));
+				 return tipo;
+			 }else{
+				 return null;
+			 }
+		 }//fin consultarTipo
+		 
+		 public String actualizar(TipoDoc tipo){
+			 
+			// if(VerificarIntegridad(tipo,5)){
+				 String[] id={tipo.getIdtipo()};
+				 ContentValues cv=new ContentValues();
+				 cv.put("IdTipo", tipo.getIdtipo());
+				 cv.put("Nombre Tipo", tipo.getNombretipo());
+				 db.update("Tipodoc", cv, "idtipo=?", id);
+				 return "Registro Actualizado correctamente";
+			/* }else{
+				 return "Registro con Id " + tipo.getIdtipo()+" no existe";
+			 } */
+		 }//fin actualizar(tipoDoc)
+		 
+		 public String eliminar(TipoDoc tipo){
+			 
+			 String regAfectados="filas afectadas= ";
+			 int contador=0;
+			 
+			 //if(verificarIntegridad(tipo,3)){
+				 //regAfectados="0";
+				 //contador+=db.delete("Tipodoc", "idtipo='"+tipo.getIdtipo()+"'", null);
+			 //}else{
+				 //borrar los registros
+				 contador+=db.delete("Tipodoc", "idtipo='"+tipo.getIdtipo()+"'", null);
+				 regAfectados+=contador;
+			 //}
+			 return regAfectados;
+		 }
+		 
+		 
+		 /***********************************************************************/
+		 /********************** Parte de DetallePrestamo *******************/
+		 
+		 public String insertar(DetallePres detalle){
+			 
+			 String regInsertados = "Registro N°= ";
+			 long contador=0;
+			 
+			 ContentValues det = new ContentValues();
+			 det.put("coddoc", detalle.getCodDoc());
+			 det.put("codprestamo", detalle.getCodPrestamo());
+			 det.put("numprestamo", detalle.getNumPrestamo());
+			 det.put("maxprest", detalle.getMaxPrest());
+			 
+			 contador=db.insert("Detalle", null, det);
+			 
+			 if(contador==-1 || contador==0)
+			 {
+				 regInsertados="Error al Insertar el Registro, Registro Duplicado. Verificar Inserción";
+			 }else{
+				 regInsertados=regInsertados+contador;
+			 }
+			 return regInsertados;
+		 }//fin insertar(TipoDoc)
+		 
+		 public DetallePres consultarDetalle(String codDoc, String codPrestamo){
+			 
+			 String[] id={codDoc,codPrestamo};
+			 Cursor cursor=db.query("Detalle",camposDetalle,"coddoc=? AND codprestamo=?",id,null,null,null);
+			 
+			 if(cursor.moveToFirst()){
+				 DetallePres detalle = new DetallePres();
+				 detalle.setCodDoc(cursor.getString(0));
+				 detalle.setCodPrestamo(cursor.getString(1));
+				 detalle.setNumPrestamo(cursor.getInt(2));
+				 detalle.setMaxPrest(cursor.getInt(3));
+			 }
+			 return null;
+		 }
+		 
+		 public String actualizar(DetallePres detalle){
+			 //if(verificarIntegridad(detalle,2)){
+				 String[] id={detalle.getCodDoc(),detalle.getCodPrestamo()};
+				 ContentValues cv= new ContentValues();
+				 cv.put("numprestamo", detalle.getNumPrestamo());
+				 cv.put("maxprest", detalle.getMaxPrest());
+				 
+				 db.update("Detalle", cv, "coddoc=? AND codprestamo=? ", id);
+				 return "Registro Actualizado Correctamente";
+			/* }else{
+				 return "Registro no Existe";
+			 }*/
+		 }
+		 
+		 public String eliminar(DetallePres detalle){
+			 String regAfectados="filas afectadas= ";
+			 int contador=0;
+			 String where="coddoc='"+detalle.getCodDoc()+"'";
+			 where=where+"AND codprestamo='"+detalle.getCodPrestamo()+"'";
+			 contador+=db.delete("Detalle", where, null);
+			 regAfectados+=contador;
+			 return regAfectados;
+		 }
+		 /**************************************************************************************/
+		 
 		    /**Llenando  la base de  **************
 		     ************* datos     **************/
 		 public String llenarBDPrestamoLib(){ 
@@ -249,10 +386,15 @@ public class ControlBDPrestamoLib {
 			final String[] VDAcoddocument = {"0046","0621","0047"};
 			final String[] VDAespecializacion = {"Analisis y Diseño","programacion","redes"};
 			
+			final String[] VTnombretipo={"libro","revista","cd"};
+			final String[] VDcodprestamo={"000001","000002","000451"};
+			
 				  abrir(); 
 				  db.execSQL("DELETE FROM area"); 
 				  db.execSQL("DELETE FROM documento"); 
 				  db.execSQL("DELETE FROM detalleautor");
+				  db.execSQL("DELETE FROM Tipodoc");
+				  db.execSQL("DELETE FROM Detalle");
 				  
 				  Area n_area = new Area(); 
 				  for(int i=0;i<3;i++){ 
@@ -279,6 +421,22 @@ public class ControlBDPrestamoLib {
 					DetalleAutor.setCoddocument(VDAcoddocument[i]);
 					DetalleAutor.setEspecializacion(VDAespecializacion[i]);				
 					insertar(DetalleAutor);
+					}
+					
+					TipoDoc tipo = new TipoDoc();
+					for(int i=0;i<3;i++){
+						tipo.setIdtipo(VDidtipo[i]);
+						tipo.setNombretipo(VTnombretipo[i]);
+						insertar(tipo);
+					}
+					
+					DetallePres detalle = new DetallePres();
+					for(int i=0;i<3;i++){
+						detalle.setCodDoc(VDcoddoc[i]);
+						detalle.setCodPrestamo(VDcodprestamo[i]);
+						detalle.setNumPrestamo(1);
+						detalle.setMaxPrest(2);
+						insertar(detalle);
 					}
 				  
 				  cerrar(); 
